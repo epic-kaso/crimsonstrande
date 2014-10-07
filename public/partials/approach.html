@@ -1,0 +1,29 @@
+<style>
+    a.active{
+        background-color: #f2f2f2;
+    }
+</style>
+<div class="row" >
+    <div class="jumbotron" >
+        <div class="jumbotron-photo col-sm-4 col-sm-offset-1 animated fadeIn">
+            <div>
+                <img class="img-responsive" src="img/approach_shpere_1.png" width="407" height="407">
+            </div>
+        </div>
+
+        <div fade-in-later class="jumbotron-contents col-sm-6">
+            <ul class="nav pull-right">
+                <li class="nav-item text-center" style="display: inline-block"><a ui-sref-active="active" ui-sref=".approach_1" style="border: solid #f2f2f2;border-radius: 50%" href="#"><span>1</span></a></li>
+                <li class="nav-item text-center" style="display: inline-block"><a ui-sref-active="active" ui-sref=".approach_2"style="border: solid #f2f2f2;border-radius: 50%" href="#"><span>2</span></a></li>
+            </ul>
+            <h1>Our Approach</h1>           
+            <div class="fade-frame" ui-view></div>
+        </div>
+    </div>
+</div>
+<script>
+    var sm_icon = $('a.small-logo');
+    if(sm_icon.css('display') == 'none') {
+        $('a.small-logo').fadeIn();
+    }
+</script>

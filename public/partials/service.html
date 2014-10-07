@@ -1,0 +1,293 @@
+<style>
+    a.active {
+        background-color: #f2f2f2;
+    }
+</style>
+<div class="row" ng-init="scroll = false">
+    <div class="contenair-sphere col-sm-6" scroller scroll="scroll" style="margin-top: 20px;">
+        <div class="sphere">
+            <img src="img/our_services_sphere.png" width="407" height="407">
+        </div>
+        <div class="ombre">&nbsp;</div>
+    </div>
+
+    <div class="content col-sm-6" style="display: block;" scroller scroll="scroll">
+        <h1 fade-in-later>Our Services</h1>
+
+        <p fade-in-later>&nbsp;To succeed in the fast-moving business world you need to stay focused. But what if you’re
+            so busy focusing on the trees, you can’t see the forest? That’s where we come in. Our consultants and
+            facilitators are highly experienced and trained to take an objective view of your whole business. Through
+            understanding things from a systemic viewpoint, we identify areas that if changed, can positively affect
+            your business through to the long-term.<br>
+            <br>
+            To make sure we deliver the best results for your company, our services are available on three levels —
+            One-to-One, Team &amp; Group, and Organization — which we can combine to suit your needs.
+        </p>
+
+        <ul fade-in-later class="nav" style="color: rgb(149, 149, 149);text-decoration: none;font-size: 1.532em;">
+            <li><a ui-sref=".facility" style="color: rgb(149, 149, 149);cursor: pointer;" ng-click="scroll = true;">Facilitation,
+                Team &amp; Group Development</a></li>
+            <li><a ui-sref=".coaching" style="color: rgb(149, 149, 149);" ng-click="scroll = true;">Executive
+                Coaching</a></li>
+            <li><a ui-sref=".communication" style="color: rgb(149, 149, 149);" ng-click="scroll = true;">Communication,
+                Management &amp; Leadership Skills</a></li>
+            <li><a ui-sref=".consultancy" style="color: rgb(149, 149, 149);" ng-click="scroll = true;">Change Management
+                &amp; Consultancy</a></li>
+            <li><a ui-sref=".vision" style="color: rgb(149, 149, 149);" ng-click="scroll = true;">Vision &amp; Mission
+                Definition</a></li>
+        </ul>
+    </div>
+    <!-- end .content-->
+
+    <div class="rendu" style="display: none;"></div>
+    <div id="row" scroller scroll="!scroll">
+        <div class="col-sm-4" style="margin-top: 20px;">
+            <ul class="nav" style="text-decoration: none;font-size: 1.532em;">
+                <li><a ng-click="scroll = !scroll" ui-sref="service"
+                       style="background-color: rgb(149, 149, 149);color: #ffffff;cursor: pointer;">&laquo; Our
+                    Services</a></li>
+            </ul>
+            <div class="fade-frame" ui-view="service-nav"></div>
+        </div>
+        <div class="col-sm-8">
+            <div class="fade-frame" ui-view></div>
+        </div>
+    </div>
+</div>
+<script type="text/ng-template" id="communication-management.html">
+    <div class="slide">
+
+        <div class="bloc1">
+            <h2>Communication, <br>
+                Management &amp; Leadership Skills</h2>
+
+            <p>Success in business takes hard work and real skill. To ensure everyone in your company can realise their
+                potential at every stage of their career, we work with individuals, teams and whole departments to
+                develop the skills they need, from engaging with people they are responsible for to negotiating major
+                contracts. To do this, we design customized programs to improve the way people communicate, manage and
+                lead across your entire business.<br>
+                <br>
+                You can see how Communication and Leadership Skills brought new successes to these companies:</p>
+        </div>
+
+        <div class="bloc2">
+            <img src="img/our_service3_minisphere.png" width="325" height="272">
+        </div>
+
+        <div class="bloc3">
+            <div class="minititle minititle2">
+                <span>Key benefits</span>
+
+                <div></div>
+            </div>
+            <ul>
+                <li>
+                    Equips managers and leaders with vital skills needed to perform at their best
+                </li>
+                <li>
+                    Strong communication enhances everything from winning new business to employee relations
+                </li>
+                <li>
+                    Helps ensure the right person gets the right role
+                </li>
+                <li>
+                    Increases employee engagement
+                </li>
+                <li>
+                    Improves self-awareness of managers and leaders
+                </li>
+                <li>
+                    Prepares and helps people for and through change initiatives such as mergers
+                </li>
+            </ul>
+        </div>
+
+        <div class="bloc4">
+            <div class="minititle minititle3">
+                <span>Our techniques</span>
+
+                <div></div>
+            </div>
+
+            <p>Here are some of the Skills Building techniques we use to deliver results :</p>
+            <ul>
+                <li>
+                    Experiential Learning (in the context of modern business challenges)
+                </li>
+                <li>
+                    Self and Peer Assessment
+                </li>
+                <li>
+                    Self-Reflection Sessions
+                </li>
+                <li>
+                    Bespoke Programmes (tailored to your specific business challenges)
+                </li>
+                <li>
+                    Self exploration through the use of masks from the Commedia dell'Arte
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearBoth"> &nbsp; </div>
+    </div>
+
+</script>
+<script type="text/ng-template" id="change-management-consultancy.html">
+    <div class="slide">
+
+        <div class="bloc1">
+            <h2>Change Management &amp; Consultancy</h2>
+
+            <p>Whether it’s an expansion overseas, a merger or some other organizational shift, change seems daunting to
+                many, particularly to those not in charge of the planning. Making sure everyone in your company is
+                committed to the change as early as possible is key to a successful transformation. Our Change
+                Management and Consultancy Services encourage managers to recognise the need to change then help them
+                engage with long-term goals whilst they still tackle day-to-day issues.<br>
+                <br>
+                At every stage, we work with you to make sure everyone in the company sees change as a necessary force.
+                To deliver long-lasting benefits, we operate at the deepest level, honoring the values and roots of the
+                business.<br>
+                <br>
+                You can see how our Change Management &amp; Consultancy helped these companies transform for the better:
+            </p>
+        </div>
+
+        <div class="bloc2">
+            <img src="img/our_service4_minisphere.png" width="325" height="272">
+        </div>
+
+        <div class="bloc3">
+            <div class="minititle minititle2">
+                <span>Key benefits</span>
+
+                <div></div>
+            </div>
+            <ul>
+                <li>
+                    Encourages employee loyalty, retention and engagement
+                </li>
+                <li>
+                    Improves productivity and profitability
+                </li>
+                <li>
+                    Enables organisations to prepare for all contingencies
+                </li>
+                <li>
+                    Increases focus on critical issues
+                </li>
+                <li>
+                    Promotes a more effective and profitable operation
+                </li>
+                <li>
+                    Creates the culture you want
+                </li>
+            </ul>
+        </div>
+
+        <div class="bloc4">
+            <div class="minititle minititle3">
+                <span>Our techniques</span>
+
+                <div></div>
+            </div>
+
+            <p>Here are some of the Change Management &amp; Consultancy techniques we use to deliver results:</p>
+            <ul>
+                <li>
+                    Exploration of Systemic Culture
+                </li>
+                <li>
+                    Gap Analysis
+                </li>
+                <li>
+                    Examination &amp; Mitigation of Unintended Consequences
+                </li>
+                <li>
+                    Identification of Pros and Cons of Change
+                </li>
+                <li>
+                    Transparent Communication
+                </li>
+                <li>
+                    Identification of the learning and unlearning needed
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearBoth"> &nbsp; </div>
+    </div>
+
+</script>
+<script type="text/ng-template" id="vision-mission-definition.html">
+    <div class="slide">
+
+        <div class="bloc1">
+            <h2>Vision &amp; Mission Definition</h2>
+
+            <p>To reach your destination, you need to know where you’re going. That’s why we work with companies to help
+                them define where they want to be in the future and the most effective route to get there. Wherever your
+                company is heading, we can help you create a clearly defined vision and the mission statement that will
+                guide you at every stage of the journey. We also work with you to ensure you don’t fall back into old
+                habits that stand in the way of new goals.<br>
+                <br>
+                You can see how our Vision &amp; Mission Definition helped these companies reach their goals:</p>
+        </div>
+
+        <div class="bloc2">
+            <img src="img/our_service5_minisphere.png" width="325" height="272">
+        </div>
+
+        <div class="bloc3">
+            <div class="minititle minititle2">
+                <span>Key benefits</span>
+
+                <div></div>
+            </div>
+            <ul>
+                <li>
+                    Clarity of direction
+                </li>
+                <li>
+                    Establishes powerful set of agreed values
+                </li>
+                <li>
+                    A clear roll-out plan is constructed and held to
+                </li>
+                <li>
+                    Creates a common purpose for everyone to pursue
+                </li>
+                <li>
+                    Clear communication channels are established, maintained and used
+                </li>
+            </ul>
+        </div>
+
+        <div class="bloc4">
+            <div class="minititle minititle3">
+                <span>Our techniques</span>
+
+                <div></div>
+            </div>
+
+            <p>Here are some of the Vision &amp; Mission Definition techniques we use to deliver results:</p>
+            <ul>
+                <li>
+                    Exploration &amp; Definition of Company Values
+                </li>
+                <li>
+                    Future Pacing (to explore the future as if it was happening today)
+                </li>
+                <li>
+                    Aftercare (including Follow Through and Maintenance of Accountability)
+                </li>
+                <li>
+                    Identifying a broad spectrum of communication channels
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearBoth"> &nbsp; </div>
+    </div>
+
+</script>
